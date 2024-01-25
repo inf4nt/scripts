@@ -18,6 +18,3 @@ sudo rm $MAVEN_ARCHIVE
 
 echo M2_HOME=$MAVEN_HOME >> ~/.bashrc
 echo 'PATH="$M2_HOME/bin:$PATH"' >> ~/.bashrc
-
-echo export M2_HOME=$MAVEN_HOME >> ~/.bashrc
-echo 'export PATH="$M2_HOME/bin:$PATH"' >> ~/.bashrc

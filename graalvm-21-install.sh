@@ -18,6 +18,3 @@ GRAALVM_HOME=$(find $WORK_DIR -type d -name 'graalvm-jdk-21*' -printf "%p" -quit
 
 echo JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
 echo 'PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
-
-echo export JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
-echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
