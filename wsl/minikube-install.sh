@@ -1,7 +1,15 @@
-sudo mkdir /opt/minikube-linux-amd64
+WORKDIR="/opt"
+MINIKUBE_HOME="$WORKDIR/minikube-linux-amd64"
+MINIKUBE_FILE="$MINIKUBE_HOME/minikube"
 
-sudo curl -o /opt/minikube-linux-amd64/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo mkdir $MINIKUBE_HOME
 
-sudo chmod +x /opt/minikube-linux-amd64/minikube
+sudo curl -o $MINIKUBE_FILE https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
-echo 'PATH="/opt/minikube-linux-amd64:$PATH"' >> ~/.bashrc
+sudo chmod +x $MINIKUBE_FILE
+
+echo '# MINIKUBE VARIABLES' >> ~/.bashrc
+echo MINIKUBE_HOME=$MINIKUBE_HOME >> ~/.bashrc
+echo 'PATH="$MINIKUBE_HOME:$PATH"' >> ~/.bashrc
+echo '# MINIKUBE VARIABLES END' >> ~/.bashrc
+echo '' >> ~/.bashrc
