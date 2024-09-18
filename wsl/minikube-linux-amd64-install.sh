@@ -18,3 +18,5 @@ echo $MINIKUBE_HOME/minikube
 
 sudo unlink /usr/bin/minikube
 sudo ln -s $MINIKUBE_HOME/minikube /usr/bin/minikube
+
+minikube version

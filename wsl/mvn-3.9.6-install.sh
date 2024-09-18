@@ -29,4 +29,4 @@ echo $MAVEN_HOME/bin/mvn
 sudo unlink /usr/bin/mvn
 sudo ln -s $MAVEN_HOME/bin/mvn /usr/bin/mvn
 
-sudo mvn -v
+mvn -v
