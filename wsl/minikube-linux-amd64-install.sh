@@ -8,8 +8,13 @@ sudo curl -o $MINIKUBE_FILE https://storage.googleapis.com/minikube/releases/lat
 
 sudo chmod +x $MINIKUBE_FILE
 
-echo '# MINIKUBE VARIABLES' >> ~/.bashrc
-echo MINIKUBE_HOME=$MINIKUBE_HOME >> ~/.bashrc
-echo 'PATH="$MINIKUBE_HOME:$PATH"' >> ~/.bashrc
-echo '# MINIKUBE VARIABLES END' >> ~/.bashrc
-echo '' >> ~/.bashrc
+#echo '# MINIKUBE VARIABLES' >> ~/.bashrc
+#echo MINIKUBE_HOME=$MINIKUBE_HOME >> ~/.bashrc
+#echo 'PATH="$MINIKUBE_HOME:$PATH"' >> ~/.bashrc
+#echo '# MINIKUBE VARIABLES END' >> ~/.bashrc
+#echo '' >> ~/.bashrc
+
+echo $MINIKUBE_HOME/minikube
+
+sudo unlink /usr/bin/minikube
+sudo ln -s $MINIKUBE_HOME/minikube /usr/bin/minikube
