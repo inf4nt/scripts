@@ -4,10 +4,14 @@ NODEJS_DOWNLOAD_URL="https://nodejs.org/dist/$NODEJS_VERSION/node-$NODEJS_VERSIO
 NODEJS_ARCHIVE="/tmp/nodejs-$NODEJS_VERSION.tar.xz"
 NODEJS_HOME="$WORK_DIR/node-$NODEJS_VERSION-linux-x64"
 
+echo '$NODEJS_DOWNLOAD_URL' $NODEJS_DOWNLOAD_URL
+echo '$NODEJS_ARCHIVE' $NODEJS_ARCHIVE
+echo '$NODEJS_HOME' $NODEJS_HOME
+
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install curl -y
+sudo apt install curl tar xz-utils  -y
 
 sudo curl -o $NODEJS_ARCHIVE $NODEJS_DOWNLOAD_URL
 
