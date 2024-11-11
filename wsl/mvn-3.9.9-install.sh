@@ -16,13 +16,13 @@ sudo tar -xzf $MAVEN_ARCHIVE -C $WORK_DIR
 
 sudo rm $MAVEN_ARCHIVE
 
-#echo '# MAVEN2 VARIABLES' >> ~/.bashrc
-#echo M2_HOME=$MAVEN_HOME >> ~/.bashrc
-#echo 'PATH="$M2_HOME/bin:$PATH"' >> ~/.bashrc
-#
-#echo export M2_HOME=$MAVEN_HOME >> ~/.bashrc
-#echo '# MAVEN2 VARIABLES END' >> ~/.bashrc
-#echo '' >> ~/.bashrc
+echo '# MAVEN2 VARIABLES' >> ~/.bashrc
+echo M2_HOME=$MAVEN_HOME >> ~/.bashrc
+echo 'PATH="$M2_HOME/bin:$PATH"' >> ~/.bashrc
+
+echo export M2_HOME=$MAVEN_HOME >> ~/.bashrc
+echo '# MAVEN2 VARIABLES END' >> ~/.bashrc
+echo '' >> ~/.bashrc
 
 echo $MAVEN_HOME/bin/mvn
 

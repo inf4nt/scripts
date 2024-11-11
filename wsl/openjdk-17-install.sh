@@ -14,13 +14,13 @@ sudo tar -xzf $ARCHIVE_ABSOLUTE_PATH -C $WORK_DIR
 
 sudo rm $ARCHIVE_ABSOLUTE_PATH
 
-#echo '# JAVA VARIABLES' >> ~/.bashrc
-#echo JAVA_HOME=$JAVA_HOME_ABSOLUTE_PATH >> ~/.bashrc
-#echo 'PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
-#
-#echo export JAVA_HOME=$JAVA_HOME_ABSOLUTE_PATH >> ~/.bashrc
-#echo '# JAVA VARIABLES END' >> ~/.bashrc
-#echo '' >> ~/.bashrc
+echo '# JAVA VARIABLES' >> ~/.bashrc
+echo JAVA_HOME=$JAVA_HOME_ABSOLUTE_PATH >> ~/.bashrc
+echo 'PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
+
+echo export JAVA_HOME=$JAVA_HOME_ABSOLUTE_PATH >> ~/.bashrc
+echo '# JAVA VARIABLES END' >> ~/.bashrc
+echo '' >> ~/.bashrc
 
 echo $JAVA_HOME_ABSOLUTE_PATH/bin/java
 

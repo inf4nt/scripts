@@ -17,13 +17,13 @@ sudo rm $GRAALVM_ARCHIVE
 
 GRAALVM_HOME=$(find $WORK_DIR -type d -name "graalvm-jdk-$GRAALVM_VERSION*" -printf "%p" -quit)
 
-#echo '# JAVA VARIABLES' >> ~/.bashrc
-#echo JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
-#echo 'PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
-#
-#echo export JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
-#echo '# JAVA VARIABLES END' >> ~/.bashrc
-#echo '' >> ~/.bashrc
+echo '# JAVA VARIABLES' >> ~/.bashrc
+echo JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
+echo 'PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bashrc
+
+echo export JAVA_HOME=$GRAALVM_HOME >> ~/.bashrc
+echo '# JAVA VARIABLES END' >> ~/.bashrc
+echo '' >> ~/.bashrc
 
 echo $GRAALVM_HOME/bin/java
 
